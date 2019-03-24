@@ -1,33 +1,75 @@
 .App {
-  text-align: center;
+    text-align: center;
+}
+h1 {
+    margin: 1.5em 0 0.5em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 10% 0 10%;
+}
+ul {
+    margin: 4em 20% 0 20%;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.btn-primary.btn-outline {
+    color: #428bca;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-success.btn-outline {
+    color: #5cb85c;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-info.btn-outline {
+    color: #5bc0de;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 20px;
+}
+
+#delete-button {
+    margin-left: 5px;
+}
+
+.completed > div:first-of-type > h5:first-of-type {
+    text-decoration: line-through;
+    transition: 1s;
+}
+.completed {
+    transition: 1s;
+}
+.deleting {
+    opacity: 0;
+    transition: 0.5s;
+}
+#delete-all-button {
+    margin-top: 3em;
 }
